@@ -24,7 +24,7 @@ Use oc get routes to check the URL
 NAME      HOST/PORT                                     PATH      SERVICES   PORT       TERMINATION   WILDCARD
 tomcat    tomcat-tomcat.apps.jclere.rhmw-runtimes.net             tomcat     8080-tcp                 None
 ```
-Test via curl or browser:
+Test via curl or browser: (I am use my demo webapp)
 ```
 curl -v http://tomcat-tomcat.apps.jclere.rhmw-runtimes.net/demo
 ```
