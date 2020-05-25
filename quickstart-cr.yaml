@@ -1,0 +1,17 @@
+apiVersion: app.stacks/v1beta1
+kind: RuntimeComponent
+metadata:
+  name: tomcat
+  labels:
+    application: "demo"
+spec:
+  applicationName: tomcat
+  applicationImage: tomcat-stream
+  autoscaling:
+    maxReplicas: 4
+    targetCPUUtilizationPercentage: 30
+    toto: 30
+  expose: true
+  env:
+    - name: KUBERNETES_NAMESPACE
+      value: tomcat-cluster
