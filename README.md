@@ -14,6 +14,10 @@ Create the ImageStream and add some images to the stream
 oc create -f stream.yaml
 oc tag docker.io/jfclere/tomcat tomcat-stream:latest --scheduled
 ```
+Create the service for the KUBEPing clustering session replication
+```
+oc create -f service.yaml
+```
 Use quickstart-cr.yaml to start 2 replicas:
 ```
 oc apply -f quickstart-cr.yaml
