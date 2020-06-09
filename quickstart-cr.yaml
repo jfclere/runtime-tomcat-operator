@@ -10,7 +10,9 @@ spec:
   autoscaling:
     maxReplicas: 4
     targetCPUUtilizationPercentage: 30
-    toto: 30
+  resourceConstraints:
+    requests:
+      cpu: 100m
   expose: true
   env:
     - name: KUBERNETES_NAMESPACE
