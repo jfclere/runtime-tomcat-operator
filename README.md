@@ -18,7 +18,7 @@ Create the service for the KUBEPing clustering session replication
 ```
 oc create -f service.yaml
 ```
-Use quickstart-cr.yaml to start 2 replicas:
+Use quickstart-cr.yaml to start 1 to 4 replicas (autoscaling):
 ```
 oc apply -f quickstart-cr.yaml
 ```
